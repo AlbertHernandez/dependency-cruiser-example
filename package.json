@@ -4,12 +4,10 @@
   "description": "Skeleton for new typescript libraries",
   "main": "src/index.js",
   "scripts": {
-    "test": "npm run test:unit",
-    "test:unit": "NODE_ENV=test jest",
+    "start:dev": "ts-node-dev --respawn src",
     "prepare": "husky install",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
     "lint:fix": "npm run lint -- --fix",
-    "playground": "ts-node-dev --respawn playground",
     "build": "npm run build:clean && npm run build:tsc",
     "build:clean": "rimraf dist; exit 0",
     "build:tsc": "tsc -p tsconfig.prod.json"
@@ -36,6 +34,7 @@
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
+    "@types/express": "^4.17.13",
     "@types/jest": "^27.0.3",
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0",
@@ -55,5 +54,9 @@
     "*.(js|ts)": [
       "npm run lint:fix"
     ]
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1"
   }
 }
