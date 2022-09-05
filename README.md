@@ -1,19 +1,13 @@
-<h1 align="center">Typescript Library Skeleton</h1>
+<h1 align="center">Dependency cruiser Example</h1>
 
 <p align="center">
-  Skeleton for new typescript libraries
-</p>
-
-<p align="center">
-    <a href="https://github.com/AlbertHernandez/typescript-library-skeleton/actions/workflows/nodejs.yml?branch=main"><img src="https://github.com/AlbertHernandez/typescript-library-skeleton/actions/workflows/nodejs.yml/badge.svg?branch=main" alt="nodejs"/></a>
+  Example of how we can use dependency cruiser in order to have architecture rules in our code
 </p>
 
 ## Table of Contents
 
-* [Preparing environment to contribute](#preparing-environment)
-* [Playground](#playground)
+* [Preparing environment](#preparing-environment)
 * [Building](#building)
-* [Testing](#testing)
 * [Linting](#linting)
 * [Contributing](#contributing)
 
@@ -26,30 +20,13 @@ nvm install 16.0.0
 nvm use
 npm install npm@8.3.0 -g
 npm install
+npm run start:dev
 ```
-
-## Playground
-
-This library offers a playground where we can play with the functions that we are developing
-
-```bash
-npm run playground
-```
-
-In case you wan
 
 ## Building
 
 ```bash
 npm run build
-```
-
-## Testing
-
-### Jest with Testing Library
-
-```bash
-npm run test
 ```
 
 ## Linting
@@ -65,7 +42,3 @@ Fix lint issues automatically
 ```bash
 npm run lint:fix
 ```
-
-## Contributing
-
-Contributions welcome! See the [Contributing Guide](https://github.com/AlbertHernandez/typescript-library-skeleton/blob/main/CONTRIBUTING.md).
