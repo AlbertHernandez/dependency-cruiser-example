@@ -7,7 +7,7 @@ const PORT = 3000;
 function boostrap() {
   const app = express();
 
-  app.use(bodyParser());
+  app.use(bodyParser.json());
   app.use("/users", usersRouter);
 
   app.listen(PORT, () => {

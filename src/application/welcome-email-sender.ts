@@ -1,10 +1,10 @@
-import { EmailSender } from "../domain/email-sender";
 import { UserByIdFinder } from "../domain/user-by-id-finder";
+import { FakeEmailSender } from "../infrastructure/email-sender/fake-email-sender";
 
 export class WelcomeEmailSender {
   constructor(
     private readonly userByIdFinder: UserByIdFinder,
-    private readonly emailSender: EmailSender
+    private readonly emailSender: FakeEmailSender
   ) {}
 
   async sendToUser(userId: string): Promise<void> {

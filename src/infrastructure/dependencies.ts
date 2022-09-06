@@ -1,6 +1,6 @@
 import { InMemoryUsersRepository } from "./database/in-memory-users-repository";
 import { UsersController } from "./rest-api/users-controller";
-import { FakeEmailSender } from "./fake-email-sender";
+import { FakeEmailSender } from "./email-sender/fake-email-sender";
 import { WelcomeEmailSender } from "../application/welcome-email-sender";
 import { UserByIdFinder } from "../domain/user-by-id-finder";
 

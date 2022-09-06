@@ -1,4 +1,4 @@
-import { EmailSender } from "../domain/email-sender";
+import { EmailSender } from "../../domain/email-sender";
 
 export class FakeEmailSender implements EmailSender {
   async sendEmail(email: string, text: string): Promise<void> {

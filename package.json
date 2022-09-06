@@ -10,7 +10,8 @@
     "lint:fix": "npm run lint -- --fix",
     "build": "npm run build:clean && npm run build:tsc",
     "build:clean": "rimraf dist; exit 0",
-    "build:tsc": "tsc -p tsconfig.prod.json"
+    "build:tsc": "tsc -p tsconfig.prod.json",
+    "dep": "depcruise --include-only '^src' --output-type dot src | dot -T svg > dependencygraph.svg"
   },
   "repository": {
     "type": "git",
@@ -48,7 +49,8 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^27.1.2",
     "ts-node-dev": "^1.1.8",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.4",
+    "dependency-cruiser": "^11.15.0"
   },
   "lint-staged": {
     "*.(js|ts)": [
