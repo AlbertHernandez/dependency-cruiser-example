@@ -11,7 +11,8 @@
     "build": "npm run build:clean && npm run build:tsc",
     "build:clean": "rimraf dist; exit 0",
     "build:tsc": "tsc -p tsconfig.prod.json",
-    "dep": "depcruise --include-only '^src' --output-type dot src | dot -T svg > dependencygraph.svg"
+    "paint-dep": "depcruise --include-only '^src' --output-type dot src | dot -T svg > dependencygraph.svg",
+    "check-dep": "depcruise --config .dependency-cruiser.js src"
   },
   "repository": {
     "type": "git",
