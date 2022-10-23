@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node dist/src/index.js",
     "start:dev": "ts-node-dev --respawn src",
+    "test": "jest --runInBand",
     "prepare": "husky install",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
     "lint:fix": "npm run lint -- --fix",
