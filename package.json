@@ -4,6 +4,7 @@
   "description": "Skeleton for new typescript libraries",
   "main": "src/index.js",
   "scripts": {
+    "start": "node dist/src/index.js",
     "start:dev": "ts-node-dev --respawn src",
     "prepare": "husky install",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
